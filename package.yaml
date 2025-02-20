@@ -35,6 +35,8 @@ ghc-options:
 
 library:
   source-dirs: src
+  dependencies: 
+  - bytestring
 
 executables:
   scbwrp-exe:
@@ -46,6 +48,8 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - scbwrp
+    - bytestring
+    - zlib
 
 tests:
   scbwrp-test:

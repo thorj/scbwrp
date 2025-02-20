@@ -9,3 +9,9 @@ and this project adheres to the
 ## Unreleased
 
 ## 0.1.0.0 - YYYY-MM-DD
+
+### Added
+
+- `bytesToHex`: converts ByteString to Hex 
+- `main` takes file from argument and reads into bytes; afterwards the first 34 hexdecimals are printed, zlib magic number identified and rest of header is decompressed before being printed as well.
+- Added a couple of my replays under `data/replays` to test parser.
